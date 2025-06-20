@@ -77,9 +77,9 @@ Creating animations for technical topics can often be time-consuming and difficu
 
 ---
 
-## 💻 Installation by OS
+## Installation by OS
 
-### 🔵 Windows
+### Windows
 
 1. **Install FFMPEG**  
    - Easiest via Chocolatey (if installed):
@@ -110,7 +110,7 @@ manim -h
 
 ---
 
-### 🟢 macOS
+### macOS
 
 1. **Install Homebrew (if not already)**
 
