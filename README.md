@@ -6,7 +6,7 @@ The following tools are fundamental for the creation process of the animations: 
 
 # Python
 
-Python is a powerful, modern tool, easy-to-learn, and versatile programming language widely used for web development, data analysis, automation, artificial intelligence, scientific computing, and more. Its clear syntax and large ecosystem of libraries like Manim, Plotly, Seaborn, and Matplotlib make it a popular choice for beginners and professionals alike.
+Python is a powerful, modern tool, easy-to-learn, and versatile programming language widely used for web development, data analysis, automation, artificial intelligence, scientific computing, and more. Its clear syntax and large ecosystem of libraries like [Manim](https://www.manim.community/), [Plotly](https://plotly.com/python/), [Seaborn](https://seaborn.pydata.org/#), and [Matplotlib](https://matplotlib.org/) make it a popular choice for beginners and professionals alike.
 
 ---
 
@@ -50,7 +50,7 @@ Python is a powerful, modern tool, easy-to-learn, and versatile programming lang
 
 # Manim
 
-**Manim** (Mathematical Animation Engine) is a robust Python-based library designed for crafting accurate, high-resolution mathematical and scientific animations. Although it gained popularity through *3Blue1Brown’s* educational YouTube channel, Manim is also a versatile tool for illustrating complex ideas in physics, computer science, engineering, and data science.
+[Manim](https://www.manim.community/) (Mathematical Animation Engine) is a robust Python-based library designed for crafting accurate, high-resolution mathematical and scientific animations. Although it gained popularity through *3Blue1Brown’s* educational YouTube channel, Manim is also a versatile tool for illustrating complex ideas in physics, computer science, engineering, and data science.
 
 Creating animations for technical topics can often be time-consuming and difficult, especially when precision is essential. Manim addresses this by allowing developers to generate animations programmatically using Python, enabling fine-grained control over each visual element. This precision helps educators and content creators deliver clear, visually engaging explanations of abstract or complex subjects.
 
