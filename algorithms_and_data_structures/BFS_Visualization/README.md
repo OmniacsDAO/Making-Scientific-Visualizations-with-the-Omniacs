@@ -6,3 +6,4 @@ This folder contains a visualization showing how BFS visits each node in expandi
 
 Explore the visualization to see BFS in action and learn how it differs from other traversal methods!
 
+![""](assets/Screenshot.png)
