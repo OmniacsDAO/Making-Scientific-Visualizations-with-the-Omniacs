@@ -6,4 +6,9 @@ A* is commonly used in game development, robotics, navigation systems, and artif
 This folder contains a visualization that shows how A* explores a grid or map, prioritizing the most promising paths using both known and estimated distances. It’s a great learning resource for understanding informed search strategies.
 
 Check out the animation and experiment with the code yourself!
+!9## How it Works
+
+Here's what the animation looks like:
+
+!["A*Pathfinding Algorithm"](assets/Screenshot.png)
 
