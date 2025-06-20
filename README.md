@@ -1,2 +1,155 @@
 # Making-Scientific-Visualizations-with-the-Omniacs
 Making Scientific Visualizations with the Omniacs
+
+
+The following tools are fundamental for the creation process of the animations: The animations are exculsively rendered using manim library, the code is written in python and ffmpeg. Other important python libraries include Plotly, Seaborn, and Matplotlib
+
+# Python
+
+Python is a powerful, modern tool, easy-to-learn, and versatile programming language widely used for web development, data analysis, automation, artificial intelligence, scientific computing, and more. Its clear syntax and large ecosystem of libraries like Manim, Plotly, Seaborn, and Matplotlib make it a popular choice for beginners and professionals alike.
+
+---
+
+## Install Python
+
+### Install on Windows
+
+1. Go to the [official Python download page](https://www.python.org/downloads/windows/).
+2. Download the latest Python installer for Windows.
+3. Run the installer.
+   - **Important:** Check the "Add Python to PATH" box before clicking "Install Now."
+4. Follow the prompts to complete installation.
+
+---
+
+### Install on Linux
+
+- **Debian/Ubuntu:**
+    ```bash
+    sudo apt update
+    sudo apt install python3 python3-pip
+    ```
+- **Fedora:**
+    ```bash
+    sudo dnf install python3 python3-pip
+    ```
+- **Other distros:**  
+  Use your package manager or refer to your distribution’s documentation.
+
+---
+
+### Install on macOS
+
+1. Install [Homebrew](https://brew.sh/) if not already installed.
+2. Open Terminal and run:
+    ```bash
+    brew install python
+    ```
+3. Alternatively, download the official installer from [python.org](https://www.python.org/downloads/macos/).
+
+
+# Manim
+
+**Manim** (Mathematical Animation Engine) is a robust Python-based library designed for crafting accurate, high-resolution mathematical and scientific animations. Although it gained popularity through *3Blue1Brown’s* educational YouTube channel, Manim is also a versatile tool for illustrating complex ideas in physics, computer science, engineering, and data science.
+
+Creating animations for technical topics can often be time-consuming and difficult, especially when precision is essential. Manim addresses this by allowing developers to generate animations programmatically using Python, enabling fine-grained control over each visual element. This precision helps educators and content creators deliver clear, visually engaging explanations of abstract or complex subjects.
+
+---
+
+## Why Use Manim?
+
+- **Precision**: Built with mathematical accuracy in mind.
+- **Customization**: Scriptable in Python, so you can control every aspect.
+- **Open-source**: Actively maintained and community-driven.
+- **Educational Power**: Helps learners grasp abstract or complex ideas through visual storytelling.
+
+---
+
+## How to Set Up Manim
+
+### Prerequisites
+
+- Python 3.8 or higher  
+- Pip (Python’s package installer)  
+- Git (Optional but helpful)  
+- FFMPEG (For rendering videos)  
+- LaTeX (For rendering mathematical expressions)
+
+---
+
+## 💻 Installation by OS
+
+### 🔵 Windows
+
+1. **Install FFMPEG**  
+   - Easiest via Chocolatey (if installed):
+     ```bash
+     choco install ffmpeg
+     ```
+   - Or download manually: [FFmpeg download](https://ffmpeg.org/download.html)
+
+2. **Create a Virtual Environment (recommended)**  
+   ```bash
+   python -m venv manim_env
+   manim_env\Scripts\activate
+
+
+3  **Install Manim**
+
+Install via pip
+
+```bash
+pip install manim
+```
+
+## Test Installation
+
+```bash
+manim -h
+```
+
+---
+
+### 🟢 macOS
+
+1. **Install Homebrew (if not already)**
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+2. **Install FFMPEG**
+
+```bash
+brew install ffmpeg
+```
+
+4 **Install Manim**
+
+```bash
+pip install manim
+```
+
+---
+
+### Linux (Ubuntu/Debian)
+
+1. **Install dependencies**
+
+```bash
+sudo apt update
+sudo apt install ffmpeg python3-pip python3-venv
+```
+
+2.  **Create and activate virtual environment**
+
+```bash
+python3 -m venv manim_env
+source manim_env/bin/activate
+```
+
+3. **Install Manim**
+
+```bash
+pip install manim
+```
