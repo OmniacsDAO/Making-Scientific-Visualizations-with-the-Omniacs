@@ -204,9 +204,9 @@ This sections will cover the common algorithms and how they are implmented and v
 
 
 
-# How to run the file to generate the animations.
+# How to Run the File to Generate the Animations.
 
-##  1. Ensure Your System Is Up to Date and manim and python are installed successifully. 
+##  1. Ensure Your System Is Up to Date and manim and python are installed successfully. 
 
 ###  Windows
 Open **Command Prompt** or **PowerShell** and run:
@@ -261,8 +261,8 @@ Replace `<quality>` with your preferred rendering level.
 ```bash
 manim -pqh bfs.py BFSVisualization
 ```
-- `-p` = preview after render  
-- `-q` = quality  
+- `-p` = preview after render
+- `-q` = quality 
 - `l, m, h` = low, medium, high respectively
 
 ---
