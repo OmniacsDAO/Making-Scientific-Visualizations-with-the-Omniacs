@@ -127,7 +127,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>.move_to(position)</code>: Places the node at a specific position on screen.</li>
 <li><code>return node</code>: Returns this grouped object to be used later in the scene.</li>
 </ul>
-<p>📸 <em>Insert screenshot of a single node on screen.</em></p>
+<p><img src="graph_with_single_node.png" class="img-fluid"></p>
 <hr>
 </section>
 </section>
@@ -145,8 +145,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Used to represent connections (edges) in the graph.</li>
 <li><code>start</code> and <code>end</code> are node objects with center positions.</li>
 </ul>
-<p>📸 <em>Insert screenshot of nodes connected by edges.</em></p>
-<hr>
+</section>
+<section id="connected_nodes" class="level2">
+<h2 class="anchored" data-anchor-id="connected_nodes"><img src="connected_nodes.png" class="img-fluid" alt="Connected_nodes"></h2>
 </section>
 <section id="legend-and-explanation-panels" class="level2">
 <h2 class="anchored" data-anchor-id="legend-and-explanation-panels">Legend and Explanation Panels</h2>
@@ -159,7 +160,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>text</code>: Description next to the dot.</li>
 <li><code>VGroup(...).arrange(RIGHT)</code>: Places the dot and text horizontally.</li>
 </ul>
-<p>📸 <em>Insert screenshot of legend on top-left.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="legends.png" class="img-fluid figure-img"></p>
+<figcaption>Legens</figcaption>
+</figure>
+</div>
 <hr>
 </section>
 <section id="laying-out-the-graph" class="level2">
@@ -174,7 +180,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Manually defines each node’s position on the canvas.</li>
 <li><code>nodes</code> is a dictionary mapping node IDs to their visual representations.</li>
 </ul>
-<p>📸 <em>Insert screenshot of full graph layout before traversal.</em></p>
 <hr>
 </section>
 <section id="edge-definitions" class="level2">
@@ -185,7 +190,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>edges</code> list defines graph connectivity.</li>
 <li><code>edge_objects</code> stores Line objects between node pairs.</li>
 </ul>
-<p>📸 <em>Insert screenshot of fully connected graph.</em></p>
 <hr>
 </section>
 <section id="titles-and-annotations" class="level2">
@@ -207,7 +211,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>explanation_group</code>: Groups algorithm descriptions.</li>
 <li>These help viewers interpret the animation.</li>
 </ul>
-<p>📸 <em>Insert screenshot with both UI panels visible.</em></p>
+<p><img src="full_scene_before.png" class="img-fluid"></p>
 <hr>
 </section>
 <section id="bfs-initialization" class="level2">
@@ -233,7 +237,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Dequeues a node and processes it.</li>
 <li>Neighbors are enqueued if unvisited.</li>
 </ul>
-<p>📸 <em>Insert screenshot showing a current node turning green.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="start_process.png" class="img-fluid figure-img"></p>
+<figcaption>Start_with_node_green</figcaption>
+</figure>
+</div>
 <hr>
 </section>
 <section id="node-edge-coloring" class="level2">
@@ -251,9 +260,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>These functions change color and opacity over time.</li>
 </ul>
-<p>📸 <em>Insert screenshot of color transitions during BFS.</em></p>
-<hr>
 </section>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"><img src="color_change_after_BFS.png" class="img-fluid"></h2>
 </section>
 <section id="level-tracking" class="level2">
 <h2 class="anchored" data-anchor-id="level-tracking">Level Tracking</h2>
@@ -261,9 +271,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>Transform(level_label, new_label)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
 <li>Shows which BFS depth level is being processed.</li>
-<li>Updated when BFS moves to the next level.</li>
+<li>Updated when BFS moves to the next level from 0-1-2..</li>
 </ul>
-<p>📸 <em>Insert screenshot showing level update text.</em></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="last_level.png" class="img-fluid figure-img"></p>
+<figcaption>Last_Level</figcaption>
+</figure>
+</div>
 <hr>
 </section>
 <section id="summary-of-animation-steps" class="level2">
@@ -294,7 +309,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li><code>-pql</code>: Preview in low quality (faster rendering)</li>
 </ul>
-<p>📸 <em>Insert screenshot of terminal output and animation preview.</em></p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">manim</span> <span class="at">-pqh</span> bfs.py BFSVisualization</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
 </section>
 <section id="questions-or-ideas" class="level2">

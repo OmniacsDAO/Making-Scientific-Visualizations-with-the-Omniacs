@@ -55,7 +55,7 @@ def create_circle_node(self, node_id, position):
 * `.move_to(position)`: Places the node at a specific position on screen.
 * `return node`: Returns this grouped object to be used later in the scene.
 
-📸 *Insert screenshot of a single node on screen.*
+![](graph_with_single_node)
 
 ---
 
@@ -75,8 +75,7 @@ def create_edge(self, start, end):
 * Used to represent connections (edges) in the graph.
 * `start` and `end` are node objects with center positions.
 
-📸 *Insert screenshot of nodes connected by edges.*
-
+![Connected_nodes](connected_nodes.png)
 ---
 
 ## Legend and Explanation Panels
@@ -92,7 +91,7 @@ def create_legend_item(self, text, color):
 * `text`: Description next to the dot.
 * `VGroup(...).arrange(RIGHT)`: Places the dot and text horizontally.
 
-📸 *Insert screenshot of legend on top-left.*
+![Legens](legends.png)
 
 ---
 
@@ -110,7 +109,7 @@ nodes = {i: self.create_circle_node(i, pos) for i, pos in positions.items()}
 * Manually defines each node's position on the canvas.
 * `nodes` is a dictionary mapping node IDs to their visual representations.
 
-📸 *Insert screenshot of full graph layout before traversal.*
+
 
 ---
 
@@ -124,7 +123,7 @@ edge_objects = {edge: self.create_edge(nodes[edge[0]], nodes[edge[1]]) for edge 
 * `edges` list defines graph connectivity.
 * `edge_objects` stores Line objects between node pairs.
 
-📸 *Insert screenshot of fully connected graph.*
+
 
 ---
 
@@ -151,7 +150,7 @@ explanation_group = VGroup(...)
 * `explanation_group`: Groups algorithm descriptions.
 * These help viewers interpret the animation.
 
-📸 *Insert screenshot with both UI panels visible.*
+![](full_scene_before.png)
 
 ---
 
@@ -182,7 +181,7 @@ while queue:
 * Dequeues a node and processes it.
 * Neighbors are enqueued if unvisited.
 
-📸 *Insert screenshot showing a current node turning green.*
+![Start_with_node_green](start_process.png)
 
 ---
 
@@ -202,8 +201,7 @@ while queue:
 
 * These functions change color and opacity over time.
 
-📸 *Insert screenshot of color transitions during BFS.*
-
+![](color_change_after_BFS.png)
 ---
 
 ## Level Tracking
@@ -214,9 +212,9 @@ Transform(level_label, new_label)
 ```
 
 * Shows which BFS depth level is being processed.
-* Updated when BFS moves to the next level.
+* Updated when BFS moves to the next level from 0-1-2..
 
-📸 *Insert screenshot showing level update text.*
+![Last_Level](last_level.png)
 
 ---
 
@@ -246,8 +244,9 @@ manim -pql bfs.py BFSVisualization
 ```
 
 * `-pql`: Preview in low quality (faster rendering)
-
-📸 *Insert screenshot of terminal output and animation preview.*
+```bash
+manim -pqh bfs.py BFSVisualization
+```
 
 ---
 
