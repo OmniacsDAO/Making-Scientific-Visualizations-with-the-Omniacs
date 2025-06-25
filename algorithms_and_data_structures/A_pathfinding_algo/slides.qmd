@@ -1,11 +1,9 @@
 ---
-
 Title: "A Pathfinding Visualization"
 format: revealjs
 theme: simple
 ---
-
-## Introduction
+# A Pathfinding Visualization
 
 A pathfinding algorithm is a computational method used to determine the optimal route or path between two points within a given space, often represented as a graph or grid. These algorithms are fundamental in computer science and artificial intelligence, enabling machines and software to navigate complex environments efficiently. Pathfinding is integral to a wide range of applications, including robotics (for autonomous movement), video game development (guiding characters or units), network routing (finding the best data transfer routes), and GPS navigation systems (suggesting shortest or fastest driving paths).
 
@@ -49,9 +47,7 @@ class PathfindingVisualization(Scene):
 * `grid_size` and `cell_size` control how large the grid is visually.
 * `self.COLORS` defines color coding for various cell states.
 
-📸 *Insert screenshot of initial empty grid here.*
-![Grid](/desktop/omniacs/media/images/image.png)
-
+![Grid](/image.png)
 
 ---
 
@@ -63,12 +59,10 @@ def create_title(self):
     ...
 ```
 
-* Adds a title to the top of the screen.
+* This code adds a title to the top of the screen, the font_size ensure the font of the title fits your desires. Change the values and see the difference. 
 * Uses Manim's `Text()` and `FadeIn()` to animate it.
 * Visually sets the tone and context for the viewer.
-
-📸 *Insert screenshot of the title displayed.*
-
+![Title](/title.png)
 ---
 
 ## Adding a Color Legend
@@ -82,8 +76,7 @@ def add_legend(self):
 * Uses `Text()` objects arranged with `VGroup()` and placed in the top-left corner.
 * VGroup groups multiple Manim objects so you can animate or position them together.
 
-📸 *Insert screenshot of the legend next to the grid.*
-
+![Legend](/legend.png)
 ---
 
 ## Grid Construction
@@ -99,7 +92,7 @@ def create_grid(self):
 * The grid is stored as a dictionary to track each cell’s metadata.
 * `mark_special_cells()` highlights start and goal points.
 
-📸 *Insert screenshot showing grid + start (green) and goal (red) points.*
+![Start_End_Points](/start_end.png)
 
 ---
 
@@ -114,7 +107,8 @@ def add_obstacles(self):
 * These are filled with dark gray color.
 * Walls are untraversable for the algorithm.
 
-📸 *Insert screenshot showing the grid with walls filled in.*
+![Walls](/walls.png)
+
 
 ---
 
@@ -158,8 +152,7 @@ def run_astar_algorithm(self):
 * Explored = blue, frontier = yellow.
 * Live visual updates using `animate.set_fill()`.
 
-📸 *Insert screenshot during pathfinding showing explored and frontier cells.*
-
+![Pathfinding_process](/exploration.png)
 ---
 
 ## Visualizing the Final Path
@@ -174,7 +167,7 @@ def visualize_path(self, came_from):
 * Colors the optimal path purple.
 * Skips start/goal for visual clarity.
 
-📸 *Insert screenshot showing final path traced in purple.*
+![Final_Path_In_Purple](/final_path.png)
 
 ---
 
@@ -189,7 +182,7 @@ def show_astar_formula(self):
 * `g(n)` = cost so far, `h(n)` = estimated cost to goal.
 * `f(n)` is the priority value.
 
-📸 *Insert screenshot showing the formula at the top corner.*
+![Cost_Function](/cost_function.png)
 
 ---
 
@@ -208,7 +201,7 @@ def add_explanation(self):
   * Purple = final path
 * Explains how priority is calculated.
 
-📸 *Insert screenshot of full scene with explanation text visible.*
+![Final_Output](/final_output.png)
 
 ---
 
@@ -217,7 +210,3 @@ def add_explanation(self):
 * We used **Manim** to visually explain the **A\*** algorithm.
 * Each color/animation directly maps to algorithm state.
 * Combined **heapq**, **heuristics**, and **animations** for clarity.
-
-✅ Great for classrooms, tutorials, or presentations!
-
-📸 *Insert final screenshot with entire scene completed.*
