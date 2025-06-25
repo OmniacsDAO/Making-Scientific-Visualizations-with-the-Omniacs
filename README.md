@@ -184,3 +184,104 @@ This sections will cover the common algorithms and how they are implmented and v
 
 - A* Pathfinding Algorithm [Link](algorithms_and_data_structures/A_pathfinding_algo/slides.html)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# How to run the file to generate the animations.
+
+##  1. Ensure Your System Is Up to Date and manim and python are installed successifully. 
+
+###  Windows
+Open **Command Prompt** or **PowerShell** and run:
+```bash
+winget upgrade --all
+```
+
+### Ubuntu/Linux
+Open Terminal and run:
+```bash
+sudo apt update && sudo apt upgrade
+```
+
+### macOS
+Open Terminal and run:
+```bash
+softwareupdate --all --install --force
+```
+
+
+---
+
+## 💾 3. Save the Script
+
+Save your animation script in a file, for example:
+```
+filename.py
+```
+Ensure your class inside the script is named `write your animation name here` (Manim uses this name to render the scene).
+
+---
+
+##  4. Render the Animation
+
+Use the Manim CLI to render the animation:
+```bash
+manim -pq<quality> filename.py 
+```
+Replace `<quality>` with your preferred rendering level.
+
+---
+
+### Rendering Quality Options
+
+| Flag  | Quality | Resolution | Speed   | Best For                   |
+|-------|---------|------------|---------|----------------------------|
+| -pql  | Low     | 480p       | Fast    | Quick development previews |
+| -pqm  | Medium  | 720p       | Moderate| Presentations              |
+| -pqh  | High    | 1080p      | Slower  | Final output               |
+
+**Example – High Quality Render:**
+```bash
+manim -pqh bfs.py BFSVisualization
+```
+- `-p` = preview after render  
+- `-q` = quality  
+- `l, m, h` = low, medium, high respectively
+
+---
+
+##  Output Location
+
+The rendered video will be saved in a directory like:
+```
+media/videos/bfs/1080p60/
+```
+You can copy or move the output `.mp4` file as per your need.
+
+---
+
+##  Tips & Customization
+
+- Use `-pql` during development for faster rendering and to safe time.
+- Tweak colors, labels, and layout to visualize different algorithms.
+- You can also render in 4K with:
+    ```bash
+    manim -p --format=mp4 --resolution=3840,2160 filename.py
+    ```
