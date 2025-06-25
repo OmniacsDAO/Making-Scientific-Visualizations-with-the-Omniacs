@@ -1,0 +1,260 @@
+---
+
+title: "Breadth-First Search Visualization with Manim"
+format: revealjs
+editor: visual
+---
+
+## Breadth-First Search Algorithm 
+
+Breadth-First Search (BFS) is a graph traversal algorithm that explores vertices level by level. Starting from a source node, it visits all its neighbors before moving to the next level of neighbors. This is achieved using a queue data structure, ensuring that the nearest nodes are visited first. BFS guarantees the shortest path in an unweighted graph, making it a fundamental algorithm in computer science.
+
+Practical uses of BFS are widespread. In navigation systems like Google Maps, BFS helps find the shortest path between locations when distances are equal or irrelevant. It’s also used in web crawlers to explore web pages layer by layer and in peer-to-peer networks (like BitTorrent) to search for data. In AI and game development, BFS finds solutions or routes in puzzles and maps. Additionally, BFS is critical in social network analysis, helping identify connections and degrees of separation between users.
+
+BFS remains relevant today because of its simplicity, efficiency, and foundational role in understanding more complex algorithms. It is a go-to method when shortest path solutions are required without weights, and it's the basis for many real-time and large-scale applications across fields like data science, cybersecurity, and robotics.
+BFS algorithm builds a strong foundation for understanding more advanced algorithms like Dijkstra's, A*, and even tree/graph-based AI techniques.
+
+---
+
+## What You'll Learn
+
+* How to animate a BFS (Breadth-First Search) traversal using Manim
+* Understand each component of the animation step by step
+* How to build and render this animation yourself
+
+---
+
+## Code Overview and Setup
+
+```python
+from manim import *
+
+class BFSVisualization(Scene):
+```
+
+* `from manim import *`: This imports all necessary Manim classes and functions for creating animations.
+* `class BFSVisualization(Scene)`: This defines a new animation scene. The `Scene` class is the foundation in Manim for any animation.
+
+---
+
+## Creating Graph Nodes
+
+```python
+def create_circle_node(self, node_id, position):
+    circle = Circle(radius=0.4, color=WHITE, fill_opacity=0.3, stroke_width=4)
+    text = Text(str(node_id), font_size=32).scale(0.8)
+    node = VGroup(circle, text).move_to(position)
+    return node
+```
+
+### What does this code do?
+
+* `circle`: Creates a circular shape to represent a graph node.
+* `text`: Places a label (number) inside the node.
+* `VGroup(circle, text)`: Combines both the circle and the text so they move as a single object.
+* `.move_to(position)`: Places the node at a specific position on screen.
+* `return node`: Returns this grouped object to be used later in the scene.
+
+📸 *Insert screenshot of a single node on screen.*
+
+---
+
+## Creating Graph Edges
+
+```python
+def create_edge(self, start, end):
+    return Line(
+        start.get_center(),
+        end.get_center(),
+        color=WHITE,
+        stroke_width=8
+    )
+```
+
+* Creates a line between two node centers.
+* Used to represent connections (edges) in the graph.
+* `start` and `end` are node objects with center positions.
+
+📸 *Insert screenshot of nodes connected by edges.*
+
+---
+
+## Legend and Explanation Panels
+
+```python
+def create_legend_item(self, text, color):
+    dot = Dot(color=color, radius=0.15, stroke_width=2)
+    text = Text(text, font_size=14, color=WHITE)
+    return VGroup(dot, text).arrange(RIGHT, buff=0.3)
+```
+
+* `dot`: A small circle used to represent a legend color.
+* `text`: Description next to the dot.
+* `VGroup(...).arrange(RIGHT)`: Places the dot and text horizontally.
+
+📸 *Insert screenshot of legend on top-left.*
+
+---
+
+## Laying Out the Graph
+
+```python
+positions = {
+    0: ORIGIN + UP * 2.5,
+    1: LEFT * 3.5 + UP * 1.2,
+    ...
+}
+nodes = {i: self.create_circle_node(i, pos) for i, pos in positions.items()}
+```
+
+* Manually defines each node's position on the canvas.
+* `nodes` is a dictionary mapping node IDs to their visual representations.
+
+📸 *Insert screenshot of full graph layout before traversal.*
+
+---
+
+## Edge Definitions
+
+```python
+edges = [(0, 1), (0, 2), ..., (7, 13)]
+edge_objects = {edge: self.create_edge(nodes[edge[0]], nodes[edge[1]]) for edge in edges}
+```
+
+* `edges` list defines graph connectivity.
+* `edge_objects` stores Line objects between node pairs.
+
+📸 *Insert screenshot of fully connected graph.*
+
+---
+
+## Titles and Annotations
+
+```python
+title = Text("Breadth-First Search (BFS)", font_size=28).to_edge(UP)
+subtitle = Text("Level by Level Graph Traversal", font_size=20).next_to(title, DOWN)
+```
+
+* Creates main and subtitle text.
+* Places at the top of the animation scene.
+
+---
+
+## Legend and Algorithm Summary
+
+```python
+legend_group = VGroup(...)
+explanation_group = VGroup(...)
+```
+
+* `legend_group`: Groups the legend items.
+* `explanation_group`: Groups algorithm descriptions.
+* These help viewers interpret the animation.
+
+📸 *Insert screenshot with both UI panels visible.*
+
+---
+
+## BFS Initialization
+
+```python
+queue = [0]
+visited = set()
+current_level = 0
+```
+
+* Start BFS from node `0`.
+* `queue` holds nodes to visit.
+* `visited` tracks explored nodes.
+* `current_level` shows BFS depth.
+
+---
+
+## Traversal Logic
+
+```python
+while queue:
+    current = queue.pop(0)
+    ...
+```
+
+* Loops while nodes remain in the queue.
+* Dequeues a node and processes it.
+* Neighbors are enqueued if unvisited.
+
+📸 *Insert screenshot showing a current node turning green.*
+
+---
+
+## Node & Edge Coloring
+
+### Colors:
+
+* `CURRENT_COLOR`: currently visited node (green)
+* `QUEUE_COLOR`: newly enqueued node (light blue)
+* `PROCESSED_COLOR`: fully processed node (blue)
+* `PATH_COLOR`: traversed edge (orange)
+
+```python
+.animate.set_fill(COLOR, opacity=X)
+.animate.set_color(PATH_COLOR)
+```
+
+* These functions change color and opacity over time.
+
+📸 *Insert screenshot of color transitions during BFS.*
+
+---
+
+## Level Tracking
+
+```python
+level_label = Text("Current Level: 0")
+Transform(level_label, new_label)
+```
+
+* Shows which BFS depth level is being processed.
+* Updated when BFS moves to the next level.
+
+📸 *Insert screenshot showing level update text.*
+
+---
+
+## Summary of Animation Steps
+
+1. Define node positions and create nodes.
+2. Define and draw graph edges.
+3. Display BFS title, legend, and explanation panels.
+4. Animate BFS:
+
+   * Highlight current node (green)
+   * Show neighbors entering the queue (light blue)
+   * Traverse edges (orange)
+   * Update level display
+   * Mark node as processed (blue)
+5. Pause to show final traversal state.
+
+---
+
+## Running the Animation
+
+1. Save your script as `bfs.py`
+2. Open terminal and run:
+
+```bash
+manim -pql bfs.py BFSVisualization
+```
+
+* `-pql`: Preview in low quality (faster rendering)
+
+📸 *Insert screenshot of terminal output and animation preview.*
+
+---
+
+## Questions or Ideas?
+
+* Try changing graph layout or colors
+* Can you extend this to DFS?
+* Want to animate the queue visually?
+
+Let’s explore more together!
