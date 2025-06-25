@@ -2,9 +2,12 @@
 ---
 
 title: "A Pathfinding Visualization"
-format: revealjs
+format: 
+  revealjs:
+    output-file: "index.html"
 theme: simple
 ---
+
 
 # A Pathfinding Visualization
 
