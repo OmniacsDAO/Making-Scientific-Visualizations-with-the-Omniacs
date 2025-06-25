@@ -1,8 +1,14 @@
+
 ---
-Title: "A Pathfinding Visualization"
-format: revealjs
+
+title: "A Pathfinding Visualization"
+format: 
+  revealjs:
+    output-file: "index.html"
 theme: simple
 ---
+
+
 # A Pathfinding Visualization
 
 A pathfinding algorithm is a computational method used to determine the optimal route or path between two points within a given space, often represented as a graph or grid. These algorithms are fundamental in computer science and artificial intelligence, enabling machines and software to navigate complex environments efficiently. Pathfinding is integral to a wide range of applications, including robotics (for autonomous movement), video game development (guiding characters or units), network routing (finding the best data transfer routes), and GPS navigation systems (suggesting shortest or fastest driving paths).
@@ -10,6 +16,8 @@ A pathfinding algorithm is a computational method used to determine the optimal 
 The relevance of pathfinding algorithms stems from their ability to solve real-world problems that involve spatial reasoning, resource management, and decision-making. Popular algorithms like Dijkstra’s, A*, and Breadth-First Search each offer different trade-offs in terms of speed, memory usage, and optimality of the path found. For instance, A* is widely used in games and robotics due to its efficiency and ability to incorporate heuristics for faster computation.
 
 Pathfinding algorithms are essential tools that empower various technologies to perform intelligent navigation and planning. Their usage continues to expand as new challenges in automation, logistics, and artificial intelligence emerge, making them a key component of modern technological solutions.ert screenshot of initial empty grid here.
+
+---
 
 ## Imports: What and Why?
 
@@ -210,3 +218,5 @@ def add_explanation(self):
 * We used **Manim** to visually explain the **A\*** algorithm.
 * Each color/animation directly maps to algorithm state.
 * Combined **heapq**, **heuristics**, and **animations** for clarity.
+
+---
