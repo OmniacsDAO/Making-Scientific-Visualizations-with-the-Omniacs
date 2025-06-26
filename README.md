@@ -159,7 +159,7 @@ In this sections, a list of animations and how they are created are outlined wit
 The animations are grouped into different categories including algorithms and data structures, ........
 ## Algorithms and Data Structures
 
-![Algorithms](https://www.w3schools.com/dsa/dsa_intro.php) are step-by-step procedures for solving problems or performing tasks. Key categories include:
+[Algorithms](https://www.w3schools.com/dsa/dsa_intro.php) are step-by-step procedures for solving problems or performing tasks. Key categories include:
 
 - Sorting (QuickSort, MergeSort): Arrange data in order.
 
@@ -180,7 +180,7 @@ On the other hand, data structures are ways to organize and store data so it can
 
 - Hash Tables: Offer fast lookup using key-value pairs.
 
-![Watch this video on algorithms and data structures to know how different algorithms and data structures are implimented including Graph Algorithms (BFS, DFS & Shortest Paths)](https://www.youtube.com/watch?v=pkYVOmU3MgA&t=7470s)
+[Watch this video on algorithms and data structures to know how different algorithms and data structures are implimented including Graph Algorithms (BFS, DFS & Shortest Paths)](https://www.youtube.com/watch?v=pkYVOmU3MgA&t=7470s)
 
 This sections will cover the common algorithms and how they are implmented and visualized. 
 
