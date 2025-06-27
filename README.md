@@ -184,9 +184,9 @@ On the other hand, data structures are ways to organize and store data so it can
 
 This sections will cover the common algorithms and how they are implmented and visualized. 
 
-- A* Pathfinding Algorithm [Link](algorithms_and_data_structures/A_pathfinding_algo/slides.html)
-
-
+- A* Pathfinding Algorithm [Link]()
+- Bredth First Search Algorithm [Link]()
+- Backtracking Algorithm [Link]()
 
 
 
