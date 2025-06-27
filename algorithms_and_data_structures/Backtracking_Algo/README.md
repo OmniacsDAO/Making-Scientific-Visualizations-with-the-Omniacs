@@ -4,6 +4,6 @@ Backtracking is a general-purpose algorithm used to explore all possible solutio
 
 This folder includes examples and visualizations that demonstrate how backtracking explores and prunes the solution space.
 
-Perfect for learners exploring recursion, tree traversal, or solving problems like Sudoku, N-Queens, and mazes.
+Perfect for game development, robotics, logistics and learners exploring recursion, tree traversal, or solving problems like Sudoku, N-Queens, and mazes.
 
 ![Preview](/preview)
