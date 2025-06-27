@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>index</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap-18e05456d0f64a33a755faf042f1ecf4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+
+<hr>
+<p>title: “A Backtracking in Triangle Peg Solitaire” format: revealjs: output-file: “index.html” theme: simple —</p>
+<section id="objective-of-this-presentation" class="level1">
+<h1>Objective of this Presentation</h1>
+<ul>
+<li>Learn how to <strong>animate a backtracking algorithm</strong> using <a href="https://www.manim.community/">Manim</a>.</li>
+<li>Visualize **A*-like pathfinding<strong> in the context of solving the </strong>Triangle Peg Solitaire** puzzle.</li>
+<li>Understand <strong>step-by-step animation creation</strong>, not just logic.</li>
+</ul>
+<hr>
+</section>
+<section id="what-is-the-a-algorithm" class="level1">
+<h1>What is the A* Algorithm?</h1>
+<ul>
+<li><strong>A*</strong> is a graph traversal and pathfinding algorithm.</li>
+<li>It finds the <strong>shortest path</strong> from a start node to a goal node using a combination of:
+<ul>
+<li><strong>g(n)</strong>: cost from start to node <code>n</code>.</li>
+<li><strong>h(n)</strong>: heuristic estimate of cost from <code>n</code> to goal. <a href="https://cs.stanford.edu/people/eroberts/courses/soco/projects/2003-04/intelligent-search/astar.html">Chooses path minimizing <code>f(n) = g(n) + h(n)</code>.</a> <img src="./shortest_path_function.png" class="img-fluid" alt="A* search algorithm"></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="why-is-a-important" class="level1">
+<h1>Why is A* Important?</h1>
+<ul>
+<li>Combines <strong>efficiency</strong> and <strong>optimality</strong> (with admissible heuristics).</li>
+<li><strong>Widely used</strong> in:
+<ul>
+<li><strong>Game development</strong> for NPC movement.</li>
+<li><strong>Robotics</strong> for obstacle-aware navigation.</li>
+<li><strong>GPS routing</strong> (e.g., Google Maps).</li>
+<li><strong>AI systems</strong> where intelligent traversal is needed.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="example-a-in-games-and-robotics" class="level1">
+<h1>Example: A* in Games and Robotics</h1>
+<ul>
+<li><strong>Games</strong>: Used to compute AI paths avoiding obstacles.</li>
+<li><strong>Robotics</strong>: Robots plan efficient movement in uncertain terrains.</li>
+<li><strong>Logistics</strong>: Route optimization in delivery or warehouse systems.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./maze_path.png" class="img-fluid figure-img"></p>
+<figcaption>Maze_Path</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="the-triangle-peg-puzzle" class="level1">
+<h1>The Triangle Peg Puzzle</h1>
+<ul>
+<li>Board has <strong>15 pegs arranged in a triangle</strong>.</li>
+<li>One peg is initially empty.</li>
+<li>Pegs <strong>jump over each other</strong> into empty holes.</li>
+<li>The goal is to end with <strong>one peg</strong> in the center.</li>
+</ul>
+<blockquote class="blockquote">
+<p>We’ll animate a solving algorithm with <strong>backtracking</strong> to highlight decision paths and corrections.</p>
+</blockquote>
+<hr>
+</section>
+<section id="step-1-setup-your-manim-scene" class="level1">
+<h1>🔧 Step 1: Setup Your Manim Scene</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> manim <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> PegGame(Scene):</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Your scene and animation logic will go here</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Inherit from <code>Scene</code> to define the animation.</li>
+<li>Manim lets you animate <strong>vector graphics using Python</strong>.</li>
+</ul>
+<hr>
+</section>
+<section id="step-2-define-peg-positions" class="level1">
+<h1>Step 2: Define Peg Positions</h1>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>    positions <span class="op">=</span> [</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>        (<span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">0</span>),    <span class="co"># Peg 1</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        (<span class="op">-</span><span class="fl">1.5</span>, <span class="dv">1</span>, <span class="dv">0</span>), (<span class="fl">1.5</span>, <span class="dv">1</span>, <span class="dv">0</span>),  <span class="co"># Pegs 2, 3</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        (<span class="op">-</span><span class="dv">3</span>, <span class="dv">0</span>, <span class="dv">0</span>), (<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>), (<span class="dv">3</span>, <span class="dv">0</span>, <span class="dv">0</span>),  <span class="co"># Pegs 4, 5, 6</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        (<span class="op">-</span><span class="fl">4.5</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>), (<span class="op">-</span><span class="fl">1.5</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>), (<span class="fl">1.5</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>), (<span class="fl">4.5</span>, <span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>),  <span class="co"># Pegs 7-10</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        (<span class="op">-</span><span class="dv">6</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">0</span>), (<span class="op">-</span><span class="dv">3</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">0</span>), (<span class="dv">0</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">0</span>), (<span class="dv">3</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">0</span>), (<span class="dv">6</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">0</span>),  <span class="co"># Pegs 11-15</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Defines the layout of the triangle board.</li>
+<li>These positions are used for drawing and animation.</li>
+</ul>
+<hr>
+</section>
+<section id="step-3-draw-the-board" class="level1">
+<h1>Step 3: Draw the Board</h1>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> draw_board(<span class="va">self</span>, board, highlight_reversed<span class="op">=</span><span class="va">False</span>):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Drawing logic here</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Filled pegs: blue circles</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Empty holes: gray circles</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># highlight_reversed: red pegs for backtracking</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Number overlays for clarity</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><strong>Filled pegs</strong> are drawn with blue circles.</li>
+<li><strong>Empty holes</strong> are gray.</li>
+<li>If <code>highlight_reversed=True</code>, backtracked pegs are drawn <strong>red</strong>.</li>
+<li>Peg numbers are overlaid for clarity.</li>
+</ul>
+<p><img src="./empty_grey.png" class="img-fluid"></p>
+<hr>
+<section id="creating-the-pegs-visually" class="level2">
+<h2 class="anchored" data-anchor-id="creating-the-pegs-visually">Creating the Pegs Visually</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>peg <span class="op">=</span> Circle(radius<span class="op">=</span><span class="fl">0.4</span>, color<span class="op">=</span>BLUE).move_to(pos)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="va">self</span>.add(Text(<span class="bu">str</span>(idx), font_size<span class="op">=</span><span class="dv">24</span>).move_to(pos))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Each peg is a <code>Circle</code>. Peg number added using <code>Text</code>.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="step-4-animate-a-move" class="level1">
+<h1>Step 4: Animate a Move</h1>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> play_move(<span class="va">self</span>, peg, over, land, board, is_reversed<span class="op">=</span><span class="va">False</span>):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Animate a single jump move</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. Peg jumps over another</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. Jumped-over peg disappears</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3. Peg lands on a new spot</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+<section id="move-animation" class="level2">
+<h2 class="anchored" data-anchor-id="move-animation">Move Animation</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="va">self</span>.play(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    MoveAlongPath(Dot(radius<span class="op">=</span><span class="fl">0.2</span>).move_to(start), Line(start, end)),</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    FadeOut(Dot().move_to(over_pos))</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>First line animates the jump.</li>
+<li>Second line fades out the peg that was jumped over.</li>
+<li>the attached screenshots indicates peg jumping over peg 5, then the second lines fades the peg that was jumped.</li>
+</ul>
+<p><img src="./empty_grey.png" class="img-fluid"> <img src="./second_anim.png" class="img-fluid"> <img src="./fades.png" class="img-fluid"></p>
+<hr>
+</section>
+</section>
+<section id="step-5-build-the-construct-method" class="level1">
+<h1>Step 5: Build the Construct Method</h1>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> construct(<span class="va">self</span>):</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. Add title/subtitle</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>        title <span class="op">=</span> Text(<span class="st">"Backtracking Algorithm for Solving the Triangle Solitaire Puzzle"</span>, font_size<span class="op">=</span><span class="dv">22</span>, color<span class="op">=</span>BLUE).to_edge(UP<span class="op">*</span><span class="fl">0.5</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>        subtitle <span class="op">=</span> Text(<span class="st">"Backtracking Moves"</span>, font_size<span class="op">=</span><span class="dv">20</span>, color<span class="op">=</span>DARK_GREY).next_to(title, DOWN, buff<span class="op">=</span><span class="fl">0.1</span>)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Add stroke to subtitle for better visibility</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        subtitle.set_stroke(color<span class="op">=</span>WHITE, width<span class="op">=</span><span class="dv">1</span>, opacity<span class="op">=</span><span class="fl">0.4</span>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Apply blue edge-up effect on title</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        title.set_stroke(color<span class="op">=</span>BLUE, width<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.play(Create(title))</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>        run_time<span class="op">=</span><span class="dv">4</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. Define starting board</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 3. Animate the initial setup</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 4. Execute list of moves (correct → wrong → backtrack → continue)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><strong>Create a title</strong> using <code>Text</code>:
+<ul>
+<li>Displays: <em>“Backtracking Algorithm for Solving the Triangle Solitaire Puzzle”</em></li>
+<li>Font size is set to 22.</li>
+<li>Text color is <code>BLUE</code>.</li>
+<li>Positioned near the <strong>top edge</strong> of the screen using <code>.to_edge(UP*0.5)</code>.</li>
+</ul></li>
+<li><strong>Create a subtitle</strong>:
+<ul>
+<li>Displays: <em>“Backtracking Moves”</em></li>
+<li>Font size is 20.</li>
+<li>Color is <code>DARK_GREY</code>.</li>
+<li>Placed just <strong>below the title</strong> using <code>.next_to(title, DOWN, buff=0.1)</code>.</li>
+</ul></li>
+<li><strong>Improve subtitle visibility</strong> by applying a <strong>stroke (outline)</strong>:
+<ul>
+<li>White stroke (<code>WHITE</code>) with width <code>1</code> and low opacity (<code>0.4</code>) so it stands out without being too bold.</li>
+</ul></li>
+<li><strong>Enhance the title appearance</strong>:
+<ul>
+<li>Apply a <code>BLUE</code> stroke to the title text using <code>.set_stroke</code>.</li>
+</ul></li>
+<li><strong>Animate the title appearing on screen</strong>:
+<ul>
+<li>Uses <code>self.play(Create(title))</code> to <strong>draw the title text</strong> as an animation.</li>
+</ul></li>
+<li><code>run_time = 4</code> is defined but <strong>not used</strong> in this snippet. (Could be intended for later animations.)</li>
+</ul>
+<section id="title" class="level2">
+<h2 class="anchored" data-anchor-id="title"><img src="title.png" class="img-fluid" alt="Title"></h2>
+</section>
+</section>
+<section id="step-6-initial-setup" class="level1">
+<h1>Step 6: Initial Setup</h1>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>board <span class="op">=</span> <span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">16</span>))</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>board.remove(<span class="dv">1</span>)  <span class="co"># Make peg 1 empty</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="va">self</span>.draw_board(board)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Board starts with 15 pegs.</li>
+<li>Peg 1 is removed (common starting state).</li>
+<li><code>draw_board()</code> renders this setup. <img src="./triangle_peg.png" class="img-fluid" alt="Triangle_Peg"></li>
+</ul>
+<hr>
+</section>
+<section id="step-7-animate-correct-moves" class="level1">
+<h1>Step 7: Animate Correct Moves</h1>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>solution_moves <span class="op">=</span> [(<span class="dv">4</span>, <span class="dv">2</span>, <span class="dv">1</span>), (<span class="dv">6</span>, <span class="dv">5</span>, <span class="dv">4</span>), ...]</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> peg, over, land <span class="kw">in</span> solution_moves:</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.play_move(peg, over, land, board)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Each tuple is a move: (from, over, to).</li>
+<li>The scene animates moves sequentially.</li>
+<li>Short pauses allow viewer digestion.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./correct_move.png" class="img-fluid figure-img"></p>
+<figcaption>Correct_Moves</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="step-8-show-wrong-path" class="level1">
+<h1>Step 8: Show Wrong Path</h1>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>wrong_moves <span class="op">=</span> [(<span class="dv">6</span>, <span class="dv">9</span>, <span class="dv">13</span>), (<span class="dv">13</span>, <span class="dv">14</span>, <span class="dv">15</span>)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>These are <strong>intentionally bad moves</strong>.</li>
+<li>You’ll show the algorithm heading down an invalid path.</li>
+</ul>
+<blockquote class="blockquote">
+<p><strong>Key Idea:</strong> Visualize mistakes to prepare for backtracking.</p>
+</blockquote>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./wrong_move.png" class="img-fluid figure-img"></p>
+<figcaption>Wrong_Moves</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="step-9-animate-backtracking" class="level1">
+<h1>Step 9: Animate Backtracking</h1>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> peg, over, land <span class="kw">in</span> <span class="bu">reversed</span>(wrong_moves):</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    board.remove(land)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>    board.append(over)</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    board.append(peg)</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.reversed_pegs <span class="op">=</span> [peg, over]</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>    <span class="va">self</span>.draw_board(board, highlight_reversed<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Undoes the move by reverting the board state.</li>
+<li><code>draw_board</code> is called again with red pegs to show reversal.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./backtracking.png" class="img-fluid figure-img"></p>
+<figcaption>Backtracking</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="step-10-resume-correct-path" class="level1">
+<h1>Step 10: Resume Correct Path</h1>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>correct_moves_after_backtrack <span class="op">=</span> [(<span class="dv">6</span>, <span class="dv">9</span>, <span class="dv">13</span>), (<span class="dv">14</span>, <span class="dv">13</span>, <span class="dv">12</span>), ...]</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Resume solving after backtracking.</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Continue until puzzle is solved or max depth reached.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><img src="./continue.png" class="img-fluid"></p>
+<hr>
+</section>
+<section id="final-animation-touch" class="level1">
+<h1>Final Animation Touch</h1>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>final_group <span class="op">=</span> Group(<span class="op">*</span><span class="va">self</span>.mobjects)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="va">self</span>.play(FadeOut(final_group, run_time<span class="op">=</span><span class="dv">4</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Smooth fade-out of all elements.</li>
+<li>Ends animation cleanly.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./final_board.png" class="img-fluid figure-img"></p>
+<figcaption>Completed</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="full-code-overview" class="level1">
+<h1>Full Code Overview</h1>
+<blockquote class="blockquote">
+<p>The full code is available in the project folder and it combines: - Position setup - Drawing logic - Move animation - State management - Backtracking + visualization</p>
+</blockquote>
+<hr>
+</section>
+<section id="tips-for-customization" class="level1">
+<h1>Tips for Customization</h1>
+<ul>
+<li>Add <strong>move numbers</strong> or <strong>highlight paths</strong>.</li>
+<li>Show <strong>decision trees</strong> alongside the board.</li>
+<li>Add sound effects for jumps and backtracking.</li>
+<li>Use <code>VGroup</code>, <code>Transform</code>, and <code>FadeTransform</code> for creative transitions.</li>
+</ul>
+<hr>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
