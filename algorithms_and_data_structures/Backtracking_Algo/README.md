@@ -6,3 +6,4 @@ This folder includes examples and visualizations that demonstrate how backtracki
 
 Perfect for learners exploring recursion, tree traversal, or solving problems like Sudoku, N-Queens, and mazes.
 
+![Preview](/preview)
