@@ -10,5 +10,5 @@ Check out the animation and experiment with the code yourself!
 
 Here's what the animation looks like:
 
-!["A*Pathfinding Algorithm"](assets/Screenshot.png)
+!["A*Pathfinding Algorithm"](Screenshot.png)
 
