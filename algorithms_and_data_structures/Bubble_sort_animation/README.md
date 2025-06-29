@@ -6,3 +6,4 @@ This folder provides an animated visualization of Bubble Sort in action, clearly
 
 Explore the animation and try modifying the data to see how the algorithm behaves!
 
+![Preview](/preview.png)
