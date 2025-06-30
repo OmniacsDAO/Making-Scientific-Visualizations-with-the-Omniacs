@@ -27,7 +27,7 @@ import numpy as np
 import heapq
 ```
 
-**🧠 Purpose of Each Import:**
+** Purpose of Each Import:**
 
 * **`from manim import *`**
   Brings in all Manim classes/functions. Used to create and animate elements like `Scene`, `Text`, `Square`, `VGroup`, etc.
