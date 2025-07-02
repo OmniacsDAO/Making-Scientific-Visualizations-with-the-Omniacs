@@ -185,14 +185,14 @@ On the other hand, data structures are ways to organize and store data so it can
 
 This sections will cover the common algorithms and how they are implmented and visualized. 
 
-- A* Pathfinding Algorithm [Link]().
-- Bredth First Search Algorithm [Link]().
-- Backtracking Algorithm [Link](). 
-- Bubble_Sort Algorithm [Link](). 
-- Color Sorting Puzzle Algorithm [Link]()
-- Connect The Dot Animation [Link]()
-- Dynamic Data Distribution [Link]()
-- Hilbert Curve Algorithm [Link]()
+- A* Pathfinding Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/A_pathfinding_algo/).
+- Bredth First Search Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/BFS_Visualization/).
+- Backtracking Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Backtracking_Algo/). 
+- Bubble_Sort Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Bubble_sort_animation/). 
+- Color Sorting Puzzle Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Color_Sorting_Animation/)
+- Connect The Dot Animation [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/ConnectTheDot/)
+- Dynamic Data Distribution [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Dynamic_data_distribution/)
+- Hilbert Curve Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/HilbertCurve_complete/)
 
 
 
