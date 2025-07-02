@@ -6,3 +6,4 @@ This folder contains an animation that sorts a palette of colors, illustrating t
 
 Ideal for creative coders, designers, and anyone interested in the intersection of data science and aesthetics.
 
+![Animation Preview](preview.png)
