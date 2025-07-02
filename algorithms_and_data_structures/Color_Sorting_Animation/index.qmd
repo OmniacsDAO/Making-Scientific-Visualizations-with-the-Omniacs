@@ -1,9 +1,9 @@
 ---
 
-title: "Bubble Sort Algorithm"
+title: "Color Sorting Puzzle Algorithm"
 format: revealjs
 editor: visual
----
+
 
 ---
 
@@ -213,7 +213,7 @@ def show_final_message(self, moves_count):
 - Animates the removal of all blocks.
 - Shows a summary message with total move count.
 
-![Animating The Removal of All Objects](remove.png
+![Animating The Removal of All Objects](remove.png)
 
 ---
 

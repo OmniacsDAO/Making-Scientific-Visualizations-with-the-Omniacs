@@ -5,14 +5,21 @@ format: revealjs
 editor: visual
 ---
 
+
 ## Breadth-First Search Algorithm 
 
 Breadth-First Search (BFS) is a graph traversal algorithm that explores vertices level by level. Starting from a source node, it visits all its neighbors before moving to the next level of neighbors. This is achieved using a queue data structure, ensuring that the nearest nodes are visited first. BFS guarantees the shortest path in an unweighted graph, making it a fundamental algorithm in computer science.
 
-Practical uses of BFS are widespread. In navigation systems like Google Maps, BFS helps find the shortest path between locations when distances are equal or irrelevant. It’s also used in web crawlers to explore web pages layer by layer and in peer-to-peer networks (like BitTorrent) to search for data. In AI and game development, BFS finds solutions or routes in puzzles and maps. Additionally, BFS is critical in social network analysis, helping identify connections and degrees of separation between users.
+Practical uses of BFS are widespread. In navigation systems like Google Maps, BFS helps find the shortest path between locations when distances are equal or irrelevant. It’s also used in web crawlers to explore web pages layer by layer and in peer-to-peer networks (like BitTorrent) to search for data. 
+
+
+---
+
+In AI and game development, BFS finds solutions or routes in puzzles and maps. Additionally, BFS is critical in social network analysis, helping identify connections and degrees of separation between users.
 
 BFS remains relevant today because of its simplicity, efficiency, and foundational role in understanding more complex algorithms. It is a go-to method when shortest path solutions are required without weights, and it's the basis for many real-time and large-scale applications across fields like data science, cybersecurity, and robotics.
 BFS algorithm builds a strong foundation for understanding more advanced algorithms like Dijkstra's, A*, and even tree/graph-based AI techniques.
+
 
 ---
 
@@ -55,6 +62,8 @@ def create_circle_node(self, node_id, position):
 * `.move_to(position)`: Places the node at a specific position on screen.
 * `return node`: Returns this grouped object to be used later in the scene.
 
+---
+
 ![](graph_with_single_node)
 
 ---
@@ -75,7 +84,10 @@ def create_edge(self, start, end):
 * Used to represent connections (edges) in the graph.
 * `start` and `end` are node objects with center positions.
 
+---
+
 ![Connected_nodes](connected_nodes.png)
+
 ---
 
 ## Legend and Explanation Panels
@@ -91,7 +103,9 @@ def create_legend_item(self, text, color):
 * `text`: Description next to the dot.
 * `VGroup(...).arrange(RIGHT)`: Places the dot and text horizontally.
 
-![Legens](legends.png)
+---
+
+![Legends](legends.png)
 
 ---
 
@@ -150,6 +164,8 @@ explanation_group = VGroup(...)
 * `explanation_group`: Groups algorithm descriptions.
 * These help viewers interpret the animation.
 
+---
+
 ![](full_scene_before.png)
 
 ---
@@ -181,6 +197,8 @@ while queue:
 * Dequeues a node and processes it.
 * Neighbors are enqueued if unvisited.
 
+---
+
 ![Start_with_node_green](start_process.png)
 
 ---
@@ -201,7 +219,10 @@ while queue:
 
 * These functions change color and opacity over time.
 
+---
+
 ![](color_change_after_BFS.png)
+
 ---
 
 ## Level Tracking
@@ -213,6 +234,8 @@ Transform(level_label, new_label)
 
 * Shows which BFS depth level is being processed.
 * Updated when BFS moves to the next level from 0-1-2..
+
+---
 
 ![Last_Level](last_level.png)
 
