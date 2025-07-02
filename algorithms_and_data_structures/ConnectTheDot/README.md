@@ -6,3 +6,4 @@ This folder includes a visualization that demonstrates how to link dots based on
 
 Dive into the code and try creating your own patterns!
 
+![Animation Preview](preview.png)
