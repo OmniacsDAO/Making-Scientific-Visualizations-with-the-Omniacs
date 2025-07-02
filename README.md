@@ -189,6 +189,10 @@ This sections will cover the common algorithms and how they are implmented and v
 - Bredth First Search Algorithm [Link]().
 - Backtracking Algorithm [Link](). 
 - Bubble_Sort Algorithm [Link](). 
+- Color Sorting Puzzle Algorithm [Link]()
+- Connect The Dot Animation [Link]()
+- Dynamic Data Distribution [Link]()
+- Hilbert Curve Algorithm [Link]()
 
 
 
