@@ -6,3 +6,5 @@ This folder includes visualizations or tools to demonstrate how different topolo
 
 It’s especially useful for developers, artists, and engineers working in graphics, animation, or scientific computing.
 
+![Animation Preview](preview.png)
+
