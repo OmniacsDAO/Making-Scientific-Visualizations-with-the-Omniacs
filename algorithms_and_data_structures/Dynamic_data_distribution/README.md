@@ -6,3 +6,5 @@ This folder features animations or tools that show changes in data patterns, mak
 
 Great for students and analysts looking to understand temporal data behaviors and underlying patterns in movement or clustering.
 
+
+![Animation Preview](preview.png)
