@@ -6,3 +6,4 @@ This folder provides a complete visualization of the Hilbert Curve’s construct
 
 Explore the visual to see how the curve fills space and preserves proximity in high-dimensional data.
 
+![Animation Preview](preview.png)
