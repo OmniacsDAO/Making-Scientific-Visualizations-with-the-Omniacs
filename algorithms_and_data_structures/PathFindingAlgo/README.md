@@ -6,3 +6,4 @@ Explore how each one navigates space, handles obstacles, and prioritizes paths. 
 
 Perfect for learners interested in game development, robotics, or artificial intelligence.
 
+![Animation Preview](preview.png)
