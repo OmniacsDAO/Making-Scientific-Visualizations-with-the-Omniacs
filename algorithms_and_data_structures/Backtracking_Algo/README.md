@@ -10,13 +10,13 @@ The **Triangle Peg Solitaire Puzzle** starts with 14 pegs in a triangle formatio
 
 ## 📽️ What This Visualization Shows
 
+[Watch it here!](https://youtu.be/AYKLSoF-6a0)
+
 - The board setup in triangle form with 15 peg slots
 - Animated peg moves: jump and removal of pegs
 - Visualized **wrong turns** followed by **backtracking**
 - Highlighted reversed moves during the backtrack phase
 - Solution resumes after recovering from mistakes
-
-![Backtracking Frame](2c2d186f-c903-4553-9711-e5e0d6f9d64a.png)
 
 ## 🔁 Algorithm Highlights
 
