@@ -211,26 +211,26 @@ Watch this video on algorithms and data structures to know how different algorit
 
 ## Communication Protocals
 
-- I2C Communication [Link]()
-- SPI COmmunication [Link]()
-- Consonant Frequency Progression [Link]()
+- I2C Communication [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/communication_protocols/I2C_Communication/)
+- SPI COmmunication [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/communication_protocols/SPI_Communication/)
+- Consonant Frequency Progression [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/communication_protocols/Consonant_Animation/)
 
 ---
 
 ## Cryptography and Ciphers
 
-- Caesar Cipher [Link]()
+- Caesar Cipher [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/cryptography_and_ciphers/Caesar_cipher/)
 
 ---
 
 ## Mathematics and Science
 
-- Cordinate System [Link]()
-- Fourier Transform [Link]()
-- Lorenz Attractor [Link]()
-- Normal Distribution [Link]()
-- Pi Irrational [Link]()
-- Sine Curve [Link]()
+- Cordinate System [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Cordinate_system/)
+- Fourier Transform [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Fourier_Transform/)
+- Lorenz Attractor [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Lorenz_attractor/)
+- Normal Distribution [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Normal_distribution/)
+- Pi Irrational [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Pi_Irrational/)
+- Sine Curve [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Sine_curve/)
 
 ---
 
