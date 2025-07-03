@@ -197,7 +197,6 @@ This sections will cover the common algorithms and how they are implmented and v
 - Mesh Topology Animation [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/MeshTopology/)
 - Path Finding Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/PathFindingAlgo/)
 - Rubik's Cube [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Rubik_s_Cube/)
-- Triangle Peg Game [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Trianglepeggame/)
 
 
 
