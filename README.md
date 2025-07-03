@@ -153,10 +153,15 @@ source manim_env/bin/activate
 ```bash
 pip install manim
 ```
+
+---
+
 #  Visualizations
 
 In this sections, a list of animations and how they are created are outlined with links to the slides detailing every step needed for a fully created animation
 The animations are grouped into different categories including algorithms and data structures, ........
+
+---
 
 ## Algorithms and Data Structures
 
@@ -170,6 +175,7 @@ The animations are grouped into different categories including algorithms and da
 
 - Dynamic Programming & Greedy: Optimize solutions to complex problems.
 
+---
 
 On the other hand, data structures are ways to organize and store data so it can be accessed and modified efficiently. Common types include:
 
@@ -181,9 +187,12 @@ On the other hand, data structures are ways to organize and store data so it can
 
 - Hash Tables: Offer fast lookup using key-value pairs.
 
-[Watch this video on algorithms and data structures to know how different algorithms and data structures are implimented including Graph Algorithms (BFS, DFS & Shortest Paths)](https://www.youtube.com/watch?v=pkYVOmU3MgA&t=7470s)
+---
 
-This sections will cover the common algorithms and how they are implmented and visualized. 
+Watch this video on algorithms and data structures to know how different algorithms and data structures are implimented including Graph Algorithms (BFS, DFS & Shortest Paths)[Link](https://www.youtube.com/watch?v=pkYVOmU3MgA&t=7470s)
+
+---
+**This sections will cover the common algorithms and how they are implmented and visualized.** 
 
 - A* Pathfinding Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/A_pathfinding_algo/).
 - Bredth First Search Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/BFS_Visualization/).
@@ -198,7 +207,32 @@ This sections will cover the common algorithms and how they are implmented and v
 - Path Finding Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/PathFindingAlgo/)
 - Rubik's Cube [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Rubik_s_Cube/)
 
+---
 
+## Communication Protocals
+
+- I2C Communication [Link]()
+- SPI COmmunication [Link]()
+- Consonant Frequency Progression [Link]()
+
+---
+
+## Cryptography and Ciphers
+
+- Caesar Cipher [Link]()
+
+---
+
+## Mathematics and Science
+
+- Cordinate System [Link]()
+- Fourier Transform [Link]()
+- Lorenz Attractor [Link]()
+- Normal Distribution [Link]()
+- Pi Irrational [Link]()
+- Sine Curve [Link]()
+
+---
 
 
 
