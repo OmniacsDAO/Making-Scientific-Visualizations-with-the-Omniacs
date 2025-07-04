@@ -3,6 +3,7 @@
 title: "Creating a Caesar Cipher Animation with Manim"
 format: revealjs
 Editor: Visual
+
 ---
 
 ## Introduction
