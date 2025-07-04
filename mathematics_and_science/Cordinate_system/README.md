@@ -2,7 +2,7 @@
 
 This project visualizes a **3D coordinate system** using [Manim](https://www.manim.community/) and animates angular structures such as **ϕ (phi)** and **θ (theta)** commonly found in spherical or cylindrical coordinate systems.
 
-![image](https://github.com/user-attachments/assets/900c22e9-7086-40c4-b9c1-233d3a3ab235)
+![image](preview.png)
 
 [Watch here!](https://youtu.be/6tzX9tJuCi8)
 
