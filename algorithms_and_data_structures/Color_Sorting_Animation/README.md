@@ -4,9 +4,9 @@ This project visually demonstrates a **color sorting puzzle algorithm** using [M
 
 ![Animation Preview](preview.png)
 
-## 🎥 What You'll See
-
 [Watch here!](https://youtu.be/pIO4U4LC7GA)
+
+## 🎥 What You'll See
 
 - Five vertical containers filled with mixed color blocks
 - Blocks animated into stacks inside each container
