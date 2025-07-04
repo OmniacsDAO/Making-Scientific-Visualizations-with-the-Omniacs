@@ -4,9 +4,9 @@ This project demonstrates the recursive construction and animation of **Hilbert 
 
 ![Animation Preview](preview.png)
 
-## 📐 What’s a Hilbert Curve?
-
 [Watch here!](https://youtu.be/ROr_MV8JT7E)
+
+## 📐 What’s a Hilbert Curve?
 
 The Hilbert Curve is a continuous fractal that fills a 2D space. It is widely used in:
 - Computer graphics
