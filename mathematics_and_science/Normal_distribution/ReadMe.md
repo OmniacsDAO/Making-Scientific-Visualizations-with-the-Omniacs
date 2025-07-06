@@ -4,7 +4,7 @@ This project animates the **bivariate normal distribution** as a 3D surface usin
 
 ![image](https://github.com/user-attachments/assets/85b88808-2ba8-4918-b541-112ecbb62c81)
 
-[Watch here!]()
+[Watch here!](https://youtu.be/2Sdc5-4Ap-M)
 
 ## 🧠 What It Teaches
 
