@@ -1,14 +1,55 @@
-# Making-Scientific-Visualizations-with-the-Omniacs
-Making Scientific Visualizations with the Omniacs
+# 🎬 Making Scientific Visualizations with the Omniacs
 
+This repository contains a curated collection of **algorithmic, scientific, and mathematical animations** built using [Manim Community Edition](https://www.manim.community/). Each animation brings a concept to life — from pathfinding to cryptography to complex 3D topologies — with the goal of making learning visual, engaging, and open source.
 
-The following tools are fundamental for the creation process of the animations: The animations are exculsively rendered using manim library, the code is written in python and ffmpeg. Other important python libraries include Plotly, Seaborn, and Matplotlib
+![image](https://github.com/user-attachments/assets/f9192296-f169-4871-8149-8256f6a1875b)
+
+[Watch the Youtube playlist here!](https://www.youtube.com/playlist?list=PLPA5Op1VzgxxkmuNUuqYln3vgQHZNqMYA)
+
+## 🔍 What You'll Find Here
+
+- **Algorithms**: Pathfinding, sorting, Caesar cipher
+- **Mathematics**: Hilbert curves, sine wave formation, Fourier transforms
+- **Statistics**: Normal distribution, dynamic data visualization
+- **Computer Science**: SPI, I2C, and mesh topology networks
+- **Physics & Systems**: Lorenz attractor, harmonic motion
+- **Fun & Interactive**: Rubik’s cube solving, connect-the-dots puzzles
+
+---
+
+- A* Pathfinding Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/A_pathfinding_algo/).
+- Bredth First Search Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/BFS_Visualization/).
+- Backtracking Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Backtracking_Algo/). 
+- Bubble Sort Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Bubble_sort_animation/). 
+- Color Sorting Puzzle Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Color_Sorting_Animation/)
+- Connect The Dot Animation [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/ConnectTheDot/)
+- Dynamic Data Distribution [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Dynamic_data_distribution/)
+- Hilbert Curve Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/HilbertCurve_complete/)
+- Circle-Line Intersection [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Circle_Line_Intersection_Animation/)
+- Mesh Topology Animation [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/MeshTopology/)
+- Path Finding Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/PathFindingAlgo/)
+- Rubik's Cube [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Rubik_s_Cube/)
+- I2C Communication [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/communication_protocols/I2C_Communication/)
+- SPI COmmunication [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/communication_protocols/SPI_Communication/)
+- Consonant Frequency Progression [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/communication_protocols/Consonant_Animation/)
+- Caesar Cipher [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/cryptography_and_ciphers/Caesar_cipher/)
+- Cordinate System [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Cordinate_system/)
+- Fourier Transform [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Fourier_Transform/)
+- Lorenz Attractor [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Lorenz_attractor/)
+- Normal Distribution [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Normal_distribution/)
+- Pi Irrational [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Pi_Irrational/)
+- Sine Curve [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Sine_curve/)
+
+Inside the `animations/` folder, each Python script represents one standalone visual experiment. Each script is accompanied by:
+- A detailed `README.md` that explains the concept
+- Visual breakdowns of key animation features
+- Instructions for rendering using Manim
+
+---
 
 # Python
 
 Python is a powerful, modern tool, easy-to-learn, and versatile programming language widely used for web development, data analysis, automation, artificial intelligence, scientific computing, and more. Its clear syntax and large ecosystem of libraries like [Manim](https://www.manim.community/), [Plotly](https://plotly.com/python/), [Seaborn](https://seaborn.pydata.org/#), and [Matplotlib](https://matplotlib.org/) make it a popular choice for beginners and professionals alike.
-
----
 
 ## Install Python
 
@@ -188,63 +229,6 @@ On the other hand, data structures are ways to organize and store data so it can
 - Hash Tables: Offer fast lookup using key-value pairs.
 
 ---
-
-Watch this video on algorithms and data structures to know how different algorithms and data structures are implimented including Graph Algorithms (BFS, DFS & Shortest Paths)[Link](https://www.youtube.com/watch?v=pkYVOmU3MgA&t=7470s)
-
----
-**This sections will cover the common algorithms and how they are implmented and visualized.** 
-
-- A* Pathfinding Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/A_pathfinding_algo/).
-- Bredth First Search Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/BFS_Visualization/).
-- Backtracking Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Backtracking_Algo/). 
-- Bubble Sort Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Bubble_sort_animation/). 
-- Color Sorting Puzzle Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Color_Sorting_Animation/)
-- Connect The Dot Animation [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/ConnectTheDot/)
-- Dynamic Data Distribution [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Dynamic_data_distribution/)
-- Hilbert Curve Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/HilbertCurve_complete/)
-- Circle-Line Intersection [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Circle_Line_Intersection_Animation/)
-- Mesh Topology Animation [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/MeshTopology/)
-- Path Finding Algorithm [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/PathFindingAlgo/)
-- Rubik's Cube [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/algorithms_and_data_structures/Rubik_s_Cube/)
-
----
-
-## Communication Protocals
-
-- I2C Communication [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/communication_protocols/I2C_Communication/)
-- SPI COmmunication [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/communication_protocols/SPI_Communication/)
-- Consonant Frequency Progression [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/communication_protocols/Consonant_Animation/)
-
----
-
-## Cryptography and Ciphers
-
-- Caesar Cipher [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/cryptography_and_ciphers/Caesar_cipher/)
-
----
-
-## Mathematics and Science
-
-- Cordinate System [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Cordinate_system/)
-- Fourier Transform [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Fourier_Transform/)
-- Lorenz Attractor [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Lorenz_attractor/)
-- Normal Distribution [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Normal_distribution/)
-- Pi Irrational [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Pi_Irrational/)
-- Sine Curve [Link](https://omniacsdao.github.io/Making-Scientific-Visualizations-with-the-Omniacs/mathematics_and_science/Sine_curve/)
-
----
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 # How to Run the File to Generate the Animations.
