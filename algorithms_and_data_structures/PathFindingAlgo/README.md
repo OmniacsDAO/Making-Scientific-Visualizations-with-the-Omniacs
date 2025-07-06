@@ -4,7 +4,7 @@ This Manim animation demonstrates the **Nearest Neighbor algorithm** as a greedy
 
 ![Animation Preview](preview.png)
 
-[Watch here!]()
+[Watch here!](https://youtu.be/bNsyoWrFoAY)
 
 ## 🔍 What It Demonstrates
 
