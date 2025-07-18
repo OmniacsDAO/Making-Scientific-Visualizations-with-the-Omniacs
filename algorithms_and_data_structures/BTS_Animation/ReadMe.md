@@ -4,7 +4,7 @@ This project visualizes the structure and operations of a **Binary Search Tree (
 
 <img width="985" height="585" alt="image" src="https://github.com/user-attachments/assets/e23752de-5d9c-45f6-bcf9-2b0a5b6f82e2" />
 
-Watch the video [here]()
+Watch the video [here](https://youtu.be/HUmjCIsdawA)
 
 ## 📽️ Demo Output
 
