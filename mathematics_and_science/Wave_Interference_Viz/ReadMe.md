@@ -2,6 +2,9 @@
 
 This project uses [Manim](https://www.manim.community/) to beautifully visualize **wave interference phenomena** — showing how two waves traveling in opposite directions interact to form standing waves, constructive and destructive patterns, and more.
 
+<img width="1810" height="1464" alt="image" src="https://github.com/user-attachments/assets/e5d7c0de-ce93-47eb-8cce-ff862dbfb4f7" />
+
+Watch the video [here](https://youtu.be/7BoTwEeRlCE).
 ## 📽️ Demo Output
 
 *A dynamic visualization of two interacting waves demonstrating key physics principles.*
@@ -59,3 +62,5 @@ Use -pqh or -p4k for high-quality rendering.
 📜 License
 
 MIT License
+
+💚 Support digital public goods – grab some $IACS tokens (Base) and help us build more open-source visualizations! Contract: 0x46e69Fa9059C3D5F8933CA5E993158568DC80EBf
