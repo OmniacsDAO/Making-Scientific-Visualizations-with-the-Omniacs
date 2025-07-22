@@ -4,7 +4,7 @@ This project uses [Manim](https://www.manim.community/) to beautifully visualize
 
 <img width="1810" height="1464" alt="image" src="https://github.com/user-attachments/assets/e5d7c0de-ce93-47eb-8cce-ff862dbfb4f7" />
 
-Watch the video [here](https://youtu.be/7BoTwEeRlCE).
+Watch the video [here](https://youtu.be/njihIWlPDPo).
 ## 📽️ Demo Output
 
 *A dynamic visualization of two interacting waves demonstrating key physics principles.*
