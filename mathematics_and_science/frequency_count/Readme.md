@@ -2,7 +2,7 @@
 
 <img width="2390" height="1472" alt="image" src="https://github.com/user-attachments/assets/bf372144-0c90-44be-88d3-b00cee594cd1" />
 
-This project uses **Manim** to animate a **frequency count** over a list of integers: initializing counters, scanning the dataset once, updating counts in real time, and finishing with a clean bar-chart distribution and summary stats. The scene is structured as a teaching aid: clear steps, progress indicators, and a final complexity recap. :contentReference[oaicite:0]{index=0}
+This project uses **Manim** to animate a **frequency count** over a list of integers: initializing counters, scanning the dataset once, updating counts in real time, and finishing with a clean bar-chart distribution and summary stats. The scene is structured as a teaching aid: clear steps, progress indicators, and a final complexity recap.
 
 Watch [here](https://www.youtube.com/watch?v=-e0VG-8eEwQ).
 ---
