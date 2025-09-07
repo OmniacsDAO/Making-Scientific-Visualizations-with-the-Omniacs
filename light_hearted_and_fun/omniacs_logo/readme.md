@@ -2,7 +2,7 @@
 
 <img width="2651" height="1483" alt="image" src="https://github.com/user-attachments/assets/b7e83772-4bdb-4b81-b597-ebb0ca68c008" />
 
-This tutorial-style visualization uses **Manim** to construct and animate the **Omniacs mascot logo** from first principles: rounded rectangles for the body, dots for eyes, cubic Bézier antennae, a curved VMobject mouth, and fun touches like blinks, color pulses, and a bounce. A right-side **Code Walkthrough** panel highlights the exact lines used at each step so learners can connect the visuals to the API calls. :contentReference[oaicite:0]{index=0}
+This tutorial-style visualization uses **Manim** to construct and animate the **Omniacs mascot logo** from first principles: rounded rectangles for the body, dots for eyes, cubic Bézier antennae, a curved VMobject mouth, and fun touches like blinks, color pulses, and a bounce. A right-side **Code Walkthrough** panel highlights the exact lines used at each step so learners can connect the visuals to the API calls. 
 
 Watch [here]().
 ---
