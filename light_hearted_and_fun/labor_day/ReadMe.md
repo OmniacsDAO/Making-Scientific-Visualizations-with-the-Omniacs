@@ -35,9 +35,10 @@ Use -qh for high-quality rendering.
 
 📁 Files
 
+```
 HonoringAmericanWorkers.py — Main script
 README.md — Project description
-
+```
 ---
 🤝 Support Generative Math Animation
 
