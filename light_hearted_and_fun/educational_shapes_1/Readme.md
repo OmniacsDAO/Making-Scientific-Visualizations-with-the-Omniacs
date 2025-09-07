@@ -2,7 +2,7 @@
 
 <img width="2807" height="1554" alt="image" src="https://github.com/user-attachments/assets/906272a5-3f68-417e-aa15-af9e29a5e10e" />
 
-This visualization uses **Manim** to teach geometry, transformations, and animation concepts by evolving basic shapes into detailed, real-world objects. Along the way, annotated code snippets are displayed so you can connect each transformation to the underlying Python commands:contentReference[oaicite:0]{index=0}.
+This visualization uses **Manim** to teach geometry, transformations, and animation concepts by evolving basic shapes into detailed, real-world objects. Along the way, annotated code snippets are displayed so you can connect each transformation to the underlying Python commands.
 
 Watch [here](https://www.youtube.com/watch?v=GB6dQNnC3Do).
 ---
