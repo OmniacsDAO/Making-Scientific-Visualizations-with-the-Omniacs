@@ -28,7 +28,7 @@ pip install manim numpy scipy
 ▶️ How to Run
 
 ```
-manim -pql Lorenz_attractor.py HonoringAmericanWorkers
+manim -pql honoring_american_workers.py
 ```
 
 Use -qh for high-quality rendering. 
@@ -36,7 +36,7 @@ Use -qh for high-quality rendering.
 📁 Files
 
 ```
-HonoringAmericanWorkers.py — Main script
+honoring_american_workers.py — Main script
 README.md — Project description
 ```
 ---
