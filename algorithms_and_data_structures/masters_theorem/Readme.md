@@ -1,7 +1,11 @@
 # Master’s Theorem — Algorithm Complexity Visualization
 
+<img width="2354" height="1437" alt="image" src="https://github.com/user-attachments/assets/4bed4ef8-56ed-4a9e-a5fb-b921968e6a4a" />
+
 This visualization uses **Manim** to explain the **Master’s Theorem**, a fundamental tool for analyzing divide-and-conquer algorithms. Through animated breakdowns, we illustrate how recursive subproblems, division factors, and combining work interact to determine runtime complexity.
 
+
+Watch [here](https://www.youtube.com/watch?v=KfzLefMWymA).
 ---
 
 ## 🎥 What the Visualization Covers
