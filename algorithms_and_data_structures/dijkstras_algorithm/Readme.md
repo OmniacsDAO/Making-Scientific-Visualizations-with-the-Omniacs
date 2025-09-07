@@ -48,6 +48,7 @@ pip install manim
 
 # Render with preview (high quality)
 manim -pqh dijkstra_algorithm.py DijkstraStepByStep
+```
 
 🌐 Powered By
 
