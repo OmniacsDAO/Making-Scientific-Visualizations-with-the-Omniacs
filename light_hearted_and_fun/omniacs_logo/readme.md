@@ -1,6 +1,6 @@
 # Omniacs Logo Educational — Build the Mascot with Manim
 
-<img width="411" height="380" alt="image" src="https://github.com/user-attachments/assets/e171031b-9fea-4e1d-bbd4-947ffc80fb89" />
+<img width="2651" height="1483" alt="image" src="https://github.com/user-attachments/assets/b7e83772-4bdb-4b81-b597-ebb0ca68c008" />
 
 This tutorial-style visualization uses **Manim** to construct and animate the **Omniacs mascot logo** from first principles: rounded rectangles for the body, dots for eyes, cubic Bézier antennae, a curved VMobject mouth, and fun touches like blinks, color pulses, and a bounce. A right-side **Code Walkthrough** panel highlights the exact lines used at each step so learners can connect the visuals to the API calls. :contentReference[oaicite:0]{index=0}
 
