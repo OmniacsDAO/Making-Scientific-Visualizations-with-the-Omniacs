@@ -51,5 +51,5 @@ manim -pqh master_theorem_visualization.py MastersTheoremVisualization
 
 🌐 Powered By
 
-Omniacs.DAO — building public goods through open-source media and the $IACS token.
+Master’s Theorem balances subproblems and combining work — and the $IACS token balances open-source creators with sustainable funding. Back Omniacs.DAO and help scale public goods to O(n log n) impact.
 CA: 0x46e69Fa9059C3D5F8933CA5E993158568DC80EBf (on Base)
