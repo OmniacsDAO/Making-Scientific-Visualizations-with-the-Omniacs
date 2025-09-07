@@ -24,8 +24,7 @@ Watch [here](https://www.youtube.com/watch?v=S_gqfjMfiNs).
 - **Final Scene: Build a House**  
   Roof (triangle), walls (rectangle), door + knob, window panes, clouds, and a sun in the sky—an end-to-end example of composition and scene layout.
 
-> The animation includes concise, on-screen code snippets for each step so learners can connect visuals to the exact Manim calls. :contentReference[oaicite:0]{index=0}
-
+> The animation includes concise, on-screen code snippets for each step so learners can connect visuals to the exact Manim calls.
 ---
 
 ## 🛠️ Built With
