@@ -45,6 +45,7 @@ pip install manim numpy scipy
 manim -pql Lorenz_attractor.py LorenzAttractorAnimation
 ```
 Use -qh for high-quality rendering.
+
 📁 Files
 
     Lorenz_attractor.py — Main script
