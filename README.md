@@ -321,3 +321,15 @@ You can copy or move the output `.mp4` file as per your need.
 🌐 Powered By
 
 Every visualization here is free and open-source — made possible by Omniacs.DAO and the $IACS token. If these projects spark curiosity or help your learning, consider supporting the token that funds public goods.  Buy [$IACS](http://dexscreener.com/base/0xd4d742cc8f54083f914a37e6b0c7b68c6005a024) on Base. CA: 0x46e69Fa9059C3D5F8933CA5E993158568DC80EBf
+
+
+
+---
+
+### Improvements
+- Added clearer contributor setup instructions.
+- Improved readability and added community contact info.
+
+Pond Profile: https://cryptopond.xyz/developer/fdc1a153-6b5f-11f0-a1f3-024775222cc3  
+Support $IACS
+
