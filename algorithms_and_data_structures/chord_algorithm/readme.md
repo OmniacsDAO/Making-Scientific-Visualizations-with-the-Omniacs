@@ -2,6 +2,9 @@
 
 An engaging Manim animation that explains the Chord distributed hash table (DHT) protocol through a creative library analogy.
 
+<img width="1363" height="686" alt="chordalgorithmvisualization" src="https://github.com/user-attachments/assets/f55f4045-eb60-4ff9-bdf8-d02413ebcb72" />
+
+
 ## Overview
 
 This visualization presents the Chord algorithm as a story about a circular library with librarians managing book sections. It makes complex distributed systems concepts accessible through relatable metaphors.
