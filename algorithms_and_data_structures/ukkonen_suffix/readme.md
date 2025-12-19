@@ -2,6 +2,9 @@
 
 A clear and educational Manim animation that demonstrates how Ukkonen's algorithm builds suffix trees in linear time.
 
+<img width="1316" height="747" alt="suffixtreeukkonen" src="https://github.com/user-attachments/assets/fbc68aa7-3fb4-463c-b19e-ed36cc6a7397" />
+
+
 ## Overview
 
 This visualization explains Ukkonen's algorithm for constructing suffix trees efficiently. The animation uses a branching tree structure to show how each character adds a new suffix to the tree in O(n) time.
