@@ -2,6 +2,9 @@
 
 An elegant Manim animation that demonstrates the construction and properties of Delaunay triangulation, a fundamental algorithm in computational geometry.
 
+<img width="1329" height="702" alt="delaunaytriangulation" src="https://github.com/user-attachments/assets/db8a6f55-bcd2-4aad-982b-f47775ba99eb" />
+
+
 ## Overview
 
 This visualization shows how to create an optimal mesh from a set of scattered points by connecting them into triangles that avoid skinny shapes and maximize minimum angles.
