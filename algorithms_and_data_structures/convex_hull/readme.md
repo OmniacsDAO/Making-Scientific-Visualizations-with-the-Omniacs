@@ -2,6 +2,9 @@
 
 A beautiful Manim animation that explains the Convex Hull problem and Graham Scan algorithm through an intuitive rubber band analogy.
 
+<img width="1362" height="702" alt="convexhull" src="https://github.com/user-attachments/assets/db4c5834-e571-4ddf-8f71-ec1d0f0ad727" />
+
+
 ## Overview
 
 This visualization demonstrates how to find the smallest boundary that wraps around a set of points - like stretching a rubber band around nails on a board and letting it snap tight.
