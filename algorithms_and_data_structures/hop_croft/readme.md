@@ -2,6 +2,9 @@
 
 A comprehensive Manim animation that demonstrates why greedy algorithms fail for maximum matching problems and how the Hopcroft-Karp algorithm succeeds using augmenting paths.
 
+<img width="1215" height="745" alt="hopcroftkarp" src="https://github.com/user-attachments/assets/2231dec7-4857-4152-bd13-7e6ba2c109bc" />
+
+
 ## Overview
 
 This visualization presents the maximum bipartite matching problem through a relatable job placement scenario, showing the limitations of greedy approaches and the power of the Hopcroft-Karp algorithm.
