@@ -2,6 +2,9 @@
 
 A comprehensive Manim animation that explains the Bitonic Sequence Search algorithm through visual demonstrations.
 
+<img width="1315" height="737" alt="bitonicsequence_search" src="https://github.com/user-attachments/assets/8f371ee3-83c6-4e31-aa8f-6591b5c549df" />
+
+
 ## Overview
 
 This animation explores the concept of bitonic sequences and demonstrates how to efficiently search within them using binary search techniques. The visualization breaks down the algorithm step-by-step, making it accessible for educational purposes.
