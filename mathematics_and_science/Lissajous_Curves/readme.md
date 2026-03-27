@@ -4,24 +4,12 @@ Structure:
   1. Title card
   2. Concept introduction
 
-lissajous_curves.py
-17 KB
 # 🌊 Lissajous Curves Visualization with Manim
 
 This project demonstrates the elegant geometry of **Lissajous Curves** — parametric figures traced by the intersection of two perpendicular harmonic oscillations. The animation is built with [Manim](https://www.manim.community/) and explores how varying the frequency ratios and phase offsets generates a rich family of curves.
 
 ![Animation Preview](preview.png)
 
-README.md
-3 KB
-﻿
-# 🌊 Lissajous Curves Visualization with Manim
-
-This project demonstrates the elegant geometry of **Lissajous Curves** — parametric figures traced by the intersection of two perpendicular harmonic oscillations. The animation is built with [Manim](https://www.manim.community/) and explores how varying the frequency ratios and phase offsets generates a rich family of curves.
-
-![Animation Preview](preview.png)
-
-[Watch here!](https://youtu.be/PLACEHOLDER)
 
 ## 📐 What's a Lissajous Curve?
 
