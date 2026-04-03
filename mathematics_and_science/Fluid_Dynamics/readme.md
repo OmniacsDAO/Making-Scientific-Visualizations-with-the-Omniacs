@@ -1,12 +1,10 @@
 # Fluid Dynamics — Navier-Stokes Visualized
-### A Manim CE Mathematical Animation
-
----
-
-## Overview
 
 A cinematic Manim animation that takes the viewer from the intuition of what a fluid is all the way to the full Navier-Stokes equation — one of the most important (and unsolved) equations in all of physics. Features live velocity field arrows, a 3D pressure landscape, dual vortex fields, a laminar-to-turbulent pipe transition, and a closing card on real-world applications.
 
+<img width="962" height="723" alt="image" src="https://github.com/user-attachments/assets/4ce035c4-c87f-4ae4-8424-d34948576bd4" />
+
+[Watch here!](https://www.youtube.com/watch?v=NGBcLhL6-vk)
 ---
 
 ## What's Inside the Video
@@ -99,3 +97,9 @@ Output: `media/videos/fluid_dynamics/1080p60/FluidDynamics.mp4`
 ## License
 
 Free to use for educational and non-commercial purposes. Attribution appreciated.
+
+---
+🤝 Support Visual Math Learning
+*Maintained with ❤️ by **Omniacs.DAO** – accelerating digital public goods through data.*
+
+🛠️ Keep public infrastructure thriving. Buy [$IACS](http://dexscreener.com/base/0xd4d742cc8f54083f914a37e6b0c7b68c6005a024) on Base — CA: 0x46e69Fa9059C3D5F8933CA5E993158568DC80EBf
