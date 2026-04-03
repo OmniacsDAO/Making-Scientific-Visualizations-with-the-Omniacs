@@ -4,6 +4,7 @@ A clear and educational Manim animation that demonstrates how Ukkonen's algorith
 
 <img width="1316" height="747" alt="suffixtreeukkonen" src="https://github.com/user-attachments/assets/fbc68aa7-3fb4-463c-b19e-ed36cc6a7397" />
 
+[Watch here!](https://www.youtube.com/watch?v=fsoVx5acA4U)
 
 ## Overview
 
