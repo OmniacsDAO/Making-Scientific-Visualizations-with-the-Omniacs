@@ -1,14 +1,11 @@
-Lissajous Curves -- Complete Manim Visualization
-================================================
-Structure:
-  1. Title card
-  2. Concept introduction
-
 # 🌊 Lissajous Curves Visualization with Manim
 
 This project demonstrates the elegant geometry of **Lissajous Curves** — parametric figures traced by the intersection of two perpendicular harmonic oscillations. The animation is built with [Manim](https://www.manim.community/) and explores how varying the frequency ratios and phase offsets generates a rich family of curves.
 
-![Animation Preview](preview.png)
+<img width="694" height="743" alt="image" src="https://github.com/user-attachments/assets/8ad319fd-1c34-4d73-a9fc-36819aabf10c" />
+
+[Watch here!](https://www.youtube.com/watch?v=uIG053CdIp8)
+
 
 
 ## 📐 What's a Lissajous Curve?
@@ -83,5 +80,3 @@ Useful for:
 *Maintained with ❤️ by **Omniacs.DAO** – accelerating digital public goods through data.*
 
 🛠️ Keep public infrastructure thriving. Buy [$IACS](http://dexscreener.com/base/0xd4d742cc8f54083f914a37e6b0c7b68c6005a024) on Base — CA: 0x46e69Fa9059C3D5F8933CA5E993158568DC80EBf
-README.md
-3 KB
