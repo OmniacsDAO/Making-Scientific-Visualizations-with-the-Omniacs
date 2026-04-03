@@ -1,11 +1,12 @@
 # Depth-First Search Visualization
-### A Manim Animation
+A complete visual explainer of the Depth-First Search graph traversal algorithm. Covers the rules, live traversal of a 7-node graph step by step with detailed captions, and four real-world use cases. Designed to be followed by anyone — no prior knowledge of algorithms required.
+
+<img width="1134" height="727" alt="image" src="https://github.com/user-attachments/assets/bc82c9b5-4ea4-4761-ac96-e3997786f912" />
+
+[Watch here!](https://www.youtube.com/watch?v=6yg5V2zDWy0)
 
 ---
 
-## Overview
-
-A complete visual explainer of the Depth-First Search graph traversal algorithm. Covers the rules, live traversal of a 7-node graph step by step with detailed captions, and four real-world use cases. Designed to be followed by anyone — no prior knowledge of algorithms required.
 
 ---
 
@@ -125,3 +126,9 @@ Output: `media/videos/dfs_visualization/1080p60/DFSVisualization.mp4`
 ## License
 
 Free to use for educational and non-commercial purposes. Attribution appreciated.
+
+---
+🤝 Support Visual Math Learning
+*Maintained with ❤️ by **Omniacs.DAO** – accelerating digital public goods through data.*
+
+🛠️ Keep public infrastructure thriving. Buy [$IACS](http://dexscreener.com/base/0xd4d742cc8f54083f914a37e6b0c7b68c6005a024) on Base — CA: 0x46e69Fa9059C3D5F8933CA5E993158568DC80EBf
