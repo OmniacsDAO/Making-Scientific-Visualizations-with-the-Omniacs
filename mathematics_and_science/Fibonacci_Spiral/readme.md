@@ -1,11 +1,11 @@
 # Fibonacci Spiral & The Golden Ratio
-### A Manim CE Mathematical Animation
-
----
-
-## Overview
-
 A cinematic Manim animation exploring one of nature's most famous numbers — φ (phi) = 1.6180339… — from its humble origins in the Fibonacci sequence all the way to a 3D golden spiral and its appearances in sunflowers, nautilus shells, DNA, and art. Designed to be followed by anyone with no prior mathematical background.
+
+<img width="1321" height="741" alt="image" src="https://github.com/user-attachments/assets/b268bfa4-d822-4bd1-88dc-92a5e20b82cf" />
+
+
+[Watch here!](https://www.youtube.com/watch?v=to_Y1MjFYkc)
+
 
 ---
 
@@ -96,3 +96,9 @@ Output: `media/videos/fibonacci_golden/1080p60/FibonacciGolden.mp4`
 ## License
 
 Free to use for educational and non-commercial purposes. Attribution appreciated.
+
+---
+🤝 Support Visual Math Learning
+*Maintained with ❤️ by **Omniacs.DAO** – accelerating digital public goods through data.*
+
+🛠️ Keep public infrastructure thriving. Buy [$IACS](http://dexscreener.com/base/0xd4d742cc8f54083f914a37e6b0c7b68c6005a024) on Base — CA: 0x46e69Fa9059C3D5F8933CA5E993158568DC80EBf
