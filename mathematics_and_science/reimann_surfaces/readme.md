@@ -1,14 +1,13 @@
 # Riemann Surfaces
-### A Manim CE Mathematical Animation
-
----
-
-## Overview
 
 A cinematic 3D Manim animation explaining Riemann surfaces from first principles — starting with the complex plane, working through the multi-value problem for √z, and building up to the two-sheeted √z surface and the infinite helicoid of log(z). No prior knowledge of complex analysis required.
 
 > *"What happens when a function has multiple values?"*
 > — Complex analysis · Bernhard Riemann · 1851
+
+<img width="835" height="726" alt="image" src="https://github.com/user-attachments/assets/cc0e4d9a-a7a5-4aa4-a69c-4f3dfc4b4d77" />
+
+[Watch here!](https://www.youtube.com/watch?v=qXdsgI7cIWk)
 
 ---
 
@@ -138,3 +137,8 @@ HDR_STROKE  = 0.5         # stroke for section headers
 ## License
 
 Free to use for educational and non-commercial purposes. Attribution appreciated.
+---
+🤝 Support Visual Math Learning
+*Maintained with ❤️ by **Omniacs.DAO** – accelerating digital public goods through data.*
+
+🛠️ Keep public infrastructure thriving. Buy [$IACS](http://dexscreener.com/base/0xd4d742cc8f54083f914a37e6b0c7b68c6005a024) on Base — CA: 0x46e69Fa9059C3D5F8933CA5E993158568DC80EBf
