@@ -1,11 +1,11 @@
 # Gradient Ascent
-### A Manim CE Mathematical Animation
-
----
-
-## Overview
 
 A cinematic 3D Manim animation explaining gradient ascent — the algorithm that climbs a function toward its maximum by always stepping in the direction of steepest uphill slope. Starting from a plain-English analogy anyone can follow, the video builds through the core equations, a 3D landscape, a top-down contour map, and a live animated ascent with two tracers climbing simultaneously from different starting points.
+
+<img width="1429" height="1448" alt="image" src="https://github.com/user-attachments/assets/9d64b0f0-b7e0-4b32-8193-d3c5bb281e01" />
+
+
+[Watch here!](https://youtu.be/7TIJYGP28A4)
 
 ---
 
@@ -133,3 +133,9 @@ This creates three peaks of different heights — demonstrating that gradient as
 ## License
 
 Free to use for educational and non-commercial purposes. Attribution appreciated.
+
+---
+🤝 Support Visual Math Learning
+*Maintained with ❤️ by **Omniacs.DAO** – accelerating digital public goods through data.*
+
+🛠️ Keep public infrastructure thriving. Buy [$IACS](http://dexscreener.com/base/0xd4d742cc8f54083f914a37e6b0c7b68c6005a024) on Base — CA: 0x46e69Fa9059C3D5F8933CA5E993158568DC80EBf
