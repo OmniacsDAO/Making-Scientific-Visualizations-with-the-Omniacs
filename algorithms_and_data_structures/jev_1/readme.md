@@ -1,4 +1,4 @@
-# JEV and Open Decision-like Models Explained
+# JEV and its Link to Open Source Research
 
 <img width="1565" height="766" alt="image" src="https://github.com/user-attachments/assets/04b83f48-cdcb-4d49-a861-155389dc32c3" />
 
