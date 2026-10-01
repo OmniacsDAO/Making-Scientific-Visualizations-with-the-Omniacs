@@ -1,5 +1,7 @@
 # Open Source JEV Alternatives
 
+<img width="1615" height="899" alt="image" src="https://github.com/user-attachments/assets/b690d7a8-029e-42ce-a464-055087e13bb5" />
+
 **6:09 · 1920×1080 · 60fps · AI voiceover + music**
 
 Voiced, layout-fixed version of the research-bundle explainer: five families of open-source models that copy Jev's interface (state in, probabilities out) with very different machinery underneath, plus DiffusionGemma and the calibration trap.
