@@ -1,5 +1,7 @@
 # Probability-First AI with Jev and Its Open Source Alternatives
 
+<img width="1607" height="897" alt="image" src="https://github.com/user-attachments/assets/bb1ad599-1d64-4d6d-93cc-6c94c91a7f6f" />
+
 **3:04 · 1920×1080 · 60fps · AI voiceover + music**
 
 Voiced, layout-fixed version of the research-bundle explainer: the March 2025 SalesRLAgent paper, the September 2025 confidence-routing paper, and how they compare with what's publicly known about Jev.
