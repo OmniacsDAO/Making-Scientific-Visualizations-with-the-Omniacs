@@ -1,5 +1,7 @@
 # JEV and Open Decision-like Models Explained
 
+<img width="1565" height="766" alt="image" src="https://github.com/user-attachments/assets/04b83f48-cdcb-4d49-a861-155389dc32c3" />
+
 **4:10 · 1920×1080 · 60fps · AI voiceover + music · burned-in captions**
 
 A code-rendered Manim explainer on Jev: what TypeSafe claims, why a decision model beats reading a chatbot's "yes", calibration, the two 2025 research papers, the five families of open-source Jev alternatives, and the shift from AI that *writes* to AI that *decides*.
